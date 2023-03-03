@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<head>
+  <title> Mahedi's Restaurant</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,200&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Londrina+Shadow&display=swap" rel="stylesheet">
+  
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #5C6786;
+}
+div {
+  height: 300px;
+  background-size: 100% 100%;
+  position: relative;
+  margin: 40px 0 90px 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 65px;
+  color: #D1DAF5;
+  margin: 60px 0 0 0;
+}
+h2 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  color: #D1DAF5;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(168, 114, 114,1), rgba(96, 110, 158,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 22px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+  font-family: 'Mali', cursive;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://cdn.hswstatic.com/gif/worst-foods-1-orig.jpg");
+}
+.second{
+  background-image: url("https://www.thestreet.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTY4NjUwMzY2OTk1ODY3Mjcx/are-you-shocked-by-new-data-that-says-mcdonalds-has-the-worst-food-quality-in-fast-food.png");
+}
+.dessert{
+  background-image: url("https://whatdidyoueat.typepad.com/photos/uncategorized/img_5737.jpg");
+}
+.price {
+  float: right;
+}
+
+.firstname {
+  font-family: 'Carter One', cursive;
+  color: #DBB6B6;
+}
+
+.secondname {
+  font-family: 'Carter One', cursive;
+  color: #EEEEC2;
+}
+
+.thirdname {
+  font-family: 'Carter One', cursive;
+  color: #D6EEC2;
+}
+
+
+input {
+	font-size: 22px;
+}
+
+.namebox {
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  background: rgba(16,75,97,0.3);
+  
+}
+
+
+
+input[type="email"] {
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  background: rgba(16,75,97,0.3);
+  
+}
+input[type="submit"] {
+  background: rgba(24, 173, 136,0.9);
+  color: grey;
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+
+
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+
+<body>
+<h1>Mahedi's Restaurant</h1>
+<h2>Best Restaurant or something</h2>
+<div class="first">
+	<input type="number" class="quantities" min="0" style="width: 50px">
+  <p class="firstname">Bacon<span class="price">$249</span><br />
+  <small>Bacon is a type of salt-cured pork made from various cuts, typically the belly or less fatty parts of the back </small></p>
+</div>
+
+<div class="second">
+	<input type="number" class="quantities" min="0" style="width: 50px">
+  <p class="secondname">cheese sandwich <span class="price">$120</span><br />
+  <small>A cheese sandwich is a sandwich made with cheese on bread. I am not very sure about this one.</small></p>
+</div>
+  
+
+ 
+<div class="dessert">
+	<input type="number" class="quantities" min="0" style="width: 50px"> 
+  <p class="thirdname">Lettuce <span class="price">$40</span><br />
+  <small>Lettuce, Lactuca sativa, is a leafy herbaceous annual or biennial plant in the family Asteraceae grown for its leaves which are used as a salad green. The lettuce plant can vary greatly in size, shape and leaf type but generally, the leaves of the plant form a dense head or loose rosette.</small></p>
+</div>
+
+<br><br>
+	<input class="namebox" id="Name" placeholder="Your name">
+	<input id="Email" type="email" placeholder="Your email">
+	<input id="submit" type="submit">
+<br><br>
+
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+
+  
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+	import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAomgbCGTX4NCBqjxeSinEiFkbeZ8W_Ivs",
+      authDomain: "mahedigenassemproj3.firebaseapp.com",
+      databaseURL: "https://mahedigenassemproj3-default-rtdb.firebaseio.com",
+      projectId: "mahedigenassemproj3",
+      storageBucket: "mahedigenassemproj3.appspot.com",
+      messagingSenderId: "272873334080",
+      appId: "1:272873334080:web:9b33e35b471778f9ed86a5"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+  
+
+const Name = document.querySelector("#Name") 
+const Email = document.querySelector("#Email")
+const prices = document.querySelectorAll(".price")
+const quantities = document.querySelectorAll(".quantities")
+const itemsList = ["Bacon", "Sandwich", "Lettuce"] 
+document.querySelector('#submit').addEventListener('click', Submit)
+
+function Submit() {
+  const timestamp = buildTimestamp()
+	let total = 0
+  let cart = { }
+  for  (let i=0; i<quantities.length; i=i+1) {
+  	if (quantities[i].value != "0" && quantities[i].value != "") {
+	    let price = prices[i].innerHTML.replace('$', '')
+		total = total + quantities[i].value * price 	
+  		cart[itemsList[i]] = parseInt(quantities[i].value) 
+  	}
+  	quantities[i].value = ""
+  }
+  
+  console.log(cart)
+  set(ref(db, timestamp), {
+	  Name: Name.value,
+      email: Email.value,
+	  cart: cart,
+	  totalPrice: total,
+	  paid: "not yet",
+  });
+
+  Name.value = ""
+  Email.value = ""
+
+}
+
+function buildTimestamp() {
+  const now = new Date();
+  let timestamp = now.getFullYear().toString() + "/";
+  //const month = now.toLocaleString('default', { month: 'long' });
+
+  let month = now.getMonth()+1   //add 1 because Javascript uses 0 for January
+  month = month.toString()
+  month = addLeadingZero(month)
+  timestamp += month + "/"; 
+
+  let date = now.getDate().toString()
+  date = addLeadingZero(date)
+  timestamp += date + "/";
+
+  let hours = now.getHours().toString()
+  hours = addLeadingZero(hours)
+  timestamp += hours + ":";
+
+  let minutes = now.getMinutes().toString()
+  minutes = addLeadingZero(minutes)
+  timestamp += minutes + ":";
+
+  let seconds = now.getSeconds().toString()
+  seconds = addLeadingZero(seconds)
+  timestamp += seconds;
+
+  return timestamp
+}
+
+function addLeadingZero(units) {
+	if (units.length < 2) {
+		units = "0" + units
+	}
+	return units
+}
+  
+
+
+</script>
+
